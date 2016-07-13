@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HumanTMC</title>
+    <link rel="shortcut icon" type="image/ico" href="human.ico" />
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="main_admin.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!--link href="sidebar.css" rel="stylesheet"-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/jquery.js"></script>
+
+    <script src="assets/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div id="wrapper">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Haman TMC</a>
+              </div>
+              <!-- /.navbar-header -->
+
+              <ul class="nav navbar-top-links navbar-right">
+
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-alerts">
+                          <li>
+                              <a href="#">
+                                  <div>
+                                      <i class="fa fa-comment fa-fw"></i> New Comment
+                                      <span class="pull-right text-muted small">4 minutes ago</span>
+                                  </div>
+                              </a>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                              <a class="text-center" href="#">
+                                  <strong>See All Alerts</strong>
+                                  <i class="fa fa-angle-right"></i>
+                              </a>
+                          </li>
+                      </ul>
+                      <!-- /.dropdown-alerts -->
+                  </li>
+                  <!-- /.dropdown -->
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-user">
+                          <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                          </li>
+                          <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                          </li>
+                          <li class="divider"></li>
+                          <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                          </li>
+                      </ul>
+                      <!-- /.dropdown-user -->
+                  </li>
+                  <!-- /.dropdown -->
+              </ul>
+              <!-- /.navbar-top-links -->
+
+              <div class="navbar-default sidebar" role="navigation">
+                  <div class="sidebar-nav navbar-collapse">
+                      <ul class="nav" id="side-menu">
+                        <li style="padding-bottom:15px;">
+                          <!-- SIDEBAR USERPIC -->
+                          <div class="profile-userpic">
+                            <img src="images/user/man5.png" class="img-responsive img-circle" alt="">
+                          </div>
+                          <!-- END SIDEBAR USERPIC -->
+                          <!-- SIDEBAR USER TITLE -->
+                          <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                              I'm Jack
+                            </div>
+                            <div class="profile-usertitle-job">
+                              Developer
+                            </div>
+                          </div>
+                          <!-- END SIDEBAR USER TITLE -->
+                          <!-- SIDEBAR BUTTONS -->
+                          <div class="profile-userbuttons">
+                            <button type="button" class="btn btn-success btn-sm">เปลี่ยนรูปประจำตัว</button>
+                          </div>
+                          <!-- END SIDEBAR BUTTONS -->
+                        </li>
+                          <li>
+                              <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-table fa-fw"></i>รายงานประจำเดือน</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-edit fa-fw"></i> รายงานประจำปี</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-files-o fa-fw"></i>รายงานทั้งหมด<span class="fa arrow"></span></a>
+                              <ul class="nav nav-second-level collapse">
+                                  <li>
+                                      <a href="#">Blank Page</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Login Page</a>
+                                  </li>
+                              </ul>
+                              <!-- /.nav-second-level -->
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- /.sidebar-collapse -->
+              </div>
+              <!-- /.navbar-static-side -->
+
+          </nav>
+
+
+
+          <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                        <div class="panel-heading">
+                            ประวัติส่วนตัว
+                        </div>
+                        <div class="panel-body">
+                            <table style="width:100%" class="profile">
+                              <tr>
+                                <td style="width:100px;">Name : </td>
+                                <td>Jesdaporn Mangmee</td>
+                              </tr>
+                              <tr>
+                                <td>position : </td>
+                                <td>Delevloper</td>
+                              </tr>
+                              <tr>
+                                <td>วันที่เริ่มงาน : </td>
+                                <td>14/03/2016</td>
+                              </tr>
+                              <tr>
+                                <td>เวลาเริ่มงาน : </td>
+                                <td>9.00 น.</td>
+                              </tr>
+                            </table>
+                        </div>
+                        <div class="panel-footer" style="text-align:right;">
+                            <a href="#">แก้ไขประวัติส่วนตัว</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="text-status" style="width:250px;height:250px;margin:auto;border:1px solid;border-radius: 50%;text-align:center;padding:35px 5px 5px 5px;background-color: #f0ad4e;">
+                  <div>จำนวนมาสาย</div>
+                  <div>ประจำเดือน </div>
+                  <div>กรกฎาคม 2559</div>
+                  <div style="font-size: 48px;color:red;">3 วัน</div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="text-status" style="width:250px;height:250px;margin:auto;border:1px solid;border-radius: 50%;text-align:center;padding:35px 5px 5px 5px;background-color: red;color:white;">
+                  <div>วันที่โดนหัก</div>
+                  <div>ประจำปี </div>
+                  <div>2559</div>
+                  <div style="font-size: 48px;color:#ccff00;;">0 วัน</div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="row" style="margin-top:15px;">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            สรุปเวลาเข้างานประจำสัปดาห์
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>วันที่</th>
+                                            <th>เวลาเข้า</th>
+                                            <th>เวลาออก</th>
+                                            <th>สถานะ</th>
+                                            <th>หมายเหตุ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01/07/2016</td>
+                                            <td>9.10</td>
+                                            <td>18.30</td>
+                                            <td>ปกติ</td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04/07/2016</td>
+                                            <td>9.10</td>
+                                            <td>18.30</td>
+                                            <td>ปกติ</td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/07/2016</td>
+                                            <td>9.10</td>
+                                            <td>18.30</td>
+                                            <td>ปกติ</td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr  class="danger">
+                                            <td>05/07/2016</td>
+                                            <td>9.25</td>
+                                            <td>18.30</td>
+                                            <td style="background-color:red;color:white">สาย</td>
+                                            <td>...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+              </div>
+            </div>
+
+
+        </div>
+
+   </body>
+</html>
